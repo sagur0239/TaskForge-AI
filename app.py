@@ -23,19 +23,19 @@ def ask_ai():
         return render_template('index.html', error="Please enter a task!")
 
     try:
-        # বর্তমানের সবচেয়ে স্ট্যাবল মডেল llama-3.3-70b-versatile ব্যবহার করা হয়েছে
+        # লেটেস্ট এবং সাপোর্টেড মডেল llama-3.3-70b-versatile
         chat_completion = client.chat.completions.create(
             messages=[
                 {
                     "role": "system",
-                    "content": "You are a professional assistant. Break down tasks into clear steps in Bengali and English."
+                    "content": "You are a professional assistant. Break down tasks into clear steps."
                 },
                 {
                     "role": "user",
                     "content": f"Please break down this task: {user_task}",
                 }
             ],
-            model="llama-3.3-70b-versatile", 
+            model="llama-3.3-70b-versatile",
         )
         
         response_text = chat_completion.choices[0].message.content
@@ -43,8 +43,10 @@ def ask_ai():
     
     except Exception as e:
         # এরর মেসেজটি পরিষ্কারভাবে দেখার জন্য
+        print(f"Error occurred: {e}")
         return render_template('index.html', error=f"AI Error: {str(e)}")
 
 if __name__ == '__main__':
+    # রেন্ডার পোর্টের জন্য ডায়নামিক কনফিগারেশন
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
