@@ -1,11 +1,9 @@
 import os
-from flask import Flask, render_template, request
 from groq import Groq
+from dotenv import load_dotenv
 
-app = Flask(__name__)
-
-# আপনার Groq API Key এখানে দিন (console.groq.com থেকে পাওয়া কি-টি)
-client = Groq(api_key="GROQ_API_KEY")
+load_dotenv()
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 @app.route('/')
 def index():
