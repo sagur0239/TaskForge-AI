@@ -5,7 +5,8 @@ from groq import Groq
 app = Flask(__name__)
 
 # আপনার Groq API Key এখানে দিন (console.groq.com থেকে পাওয়া কি-টি)
-client = Groq(api_key="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")
+# client = Groq(api_key="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")
+client = Groq(api_key="YOUR_GROQ_API_KEY")
 
 @app.route('/')
 def index():
