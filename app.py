@@ -1,10 +1,15 @@
 import os
+from flask import Flask, render_template, request
 from groq import Groq
 from dotenv import load_dotenv
+
+# এই লাইনটি আপনার কোডে নেই, এটি যোগ করুন
+app = Flask(__name__) 
 
 load_dotenv()
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
+# এরপর আপনার বাকি কোড...
 @app.route('/')
 def index():
     return render_template('index.html', task=None, response=None)
