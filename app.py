@@ -11,6 +11,15 @@ app = Flask(__name__)
 # গ্রোক ক্লায়েন্ট সেটআপ
 api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
+# গ্রোক ক্লায়েন্ট সেটআপ (এপিআই কি না থাকলে যেন ক্রাশ না করে)
+api_key = os.getenv("GROQ_API_KEY")
+
+if not api_key:
+    print("Warning: GROQ_API_KEY is missing!")
+
+client = Groq(
+    api_key=api_key,
+)
 
 @app.route('/')
 def index():
