@@ -47,6 +47,5 @@ def ask_ai():
         return render_template('index.html', error=f"AI Error: {str(e)}")
 
 if __name__ == '__main__':
-    # রেন্ডার পোর্টের জন্য ডায়নামিক কনফিগারেশন
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=False) # debug=False রাখুন প্রোডাকশনে
