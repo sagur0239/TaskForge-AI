@@ -28,14 +28,14 @@ def ask_ai():
             messages=[
                 {
                     "role": "system",
-                    "content": "You are a professional assistant. Break down tasks into clear, beautiful bulleted steps in Bengali and English. Maintain a professional and fresh tone."
+                    "content": "You are a professional assistant. Break down tasks into clear steps."
                 },
                 {
                     "role": "user",
                     "content": f"Please break down this task: {user_task}",
                 }
             ],
-            # ফ্রি টায়ারে এই মডেলটি সবচেয়ে ভালো কাজ করে
+            # এখানে 'llama3-8b-8192' এর বদলে নিচেরটি লিখুন:
             model="llama-3.3-70b-versatile", 
         )
         
