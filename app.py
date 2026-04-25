@@ -47,5 +47,6 @@ def ask_ai():
         return render_template('index.html', error=f"AI Error: {str(e)}")
 
 if __name__ == '__main__':
+    # রেন্ডার এই PORT এনভায়রনমেন্ট ভেরিয়েবলটি ব্যবহার করে
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=False) # debug=False রাখুন প্রোডাকশনে
+    app.run(host='0.0.0.0', port=port)
