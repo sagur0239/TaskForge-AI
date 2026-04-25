@@ -36,7 +36,7 @@ def ask_ai():
                 }
             ],
             # ফ্রি টায়ারে এই মডেলটি সবচেয়ে ভালো কাজ করে
-            model="llama3-8b-8192", 
+            model="llama-3.3-70b-versatile", 
         )
         
         response_text = chat_completion.choices[0].message.content
