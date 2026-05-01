@@ -1,32 +1,32 @@
-# 🚀 TaskForge-AI: Smart Productivity Assistant
-**TaskForge-AI** একটি অত্যাধুনিক AI-Powered ওয়েব অ্যাপ্লিকেশন যা ব্যবহারকারীর যেকোনো জটিল কাজকে সহজ ও বাস্তবায়নযোগ্য ধাপে ভাগ করে দেয়। এটি প্রকৃতির সতেজতা (Nature Theme) এবং শক্তিশালী এআই মডেলের সমন্বয়ে তৈরি।
+🚀 TaskForge-AI: Smart Productivity Assistant
+TaskForge-AI is an advanced AI-powered web application that transforms complex tasks into simple, actionable steps. It combines a refreshing nature-inspired theme with powerful AI models to deliver an efficient user experience.
 
-## 🌟 মূল বৈশিষ্ট্যসমূহ (Features)
-- **Fast Execution:** Groq Cloud API ব্যবহার করার ফলে এটি সাধারণ এআই থেকে ১০ গুণ দ্রুত কাজ করে।
-- **Deep Analysis:** Meta-র Llama 3.3 (70B) মডেল ব্যবহার করে নিখুঁত টাস্ক ব্রেকডাউন প্রদান করে।
-- **Modern UI:** গ্লাস-মরফিজম এবং ডার্ক মোড যুক্ত একটি প্রফেশনাল ইন্টারফেস।
-- **Bilingual Support:** ইংরেজি এবং বাংলা উভয় ভাষাতেই এটি কাজ বুঝতে ও ফলাফল দিতে সক্ষম।
+🌟 Key Features
 
-## 🛠 টেকনোলজি স্ট্যাক (Tech Stack)
-- **Backend:** Python (Flask Framework)
-- **AI Engine:** Groq API (Llama-3.3-70B-Versatile)
-- **Frontend:** HTML5, CSS3, Bootstrap 5
-- **OS Environment:** Ubuntu Linux
+Fast Execution: Powered by the Groq Cloud API, it performs tasks up to 10x faster than typical AI systems.
+Deep Analysis: Utilizes Meta’s Llama 3.3 (70B) model to provide precise and structured task breakdowns.
+Modern UI: Features a professional interface with glassmorphism design and dark mode support.
+Bilingual Support: قادر to understand and generate responses in both English and Bengali.
 
-## 🏗 সিস্টেম আর্কিটেকচার (How it Works)
-ইউজার যখন কোনো কাজ ইনপুট দেয়, তখন সেটি নিচের ধাপগুলো অনুসরণ করে:
-1. **Input:** ইউজার ব্রাউজারের মাধ্যমে টাস্ক সাবমিট করে।
-2. **Processing:** Flask ব্যাকএন্ড সেই ডেটা গ্রহণ করে Groq API-তে পাঠায়।
-3. **AI Reasoning:** Llama 3.3 মডেল কাজটি বিশ্লেষণ করে ছোট ছোট স্টেপ তৈরি করে।
-4. **Output:** ফ্রন্টএন্ড সেই স্টেপগুলো সুন্দরভাবে ইউজারের সামনে প্রদর্শন করে।
+🛠 Technology Stack
 
+Backend: Python (Flask Framework)
+AI Engine: Groq API (Llama-3.3-70B-Versatile)
+Frontend: HTML5, CSS3, Bootstrap 5
+OS Environment: Ubuntu Linux
 
+🏗 System Architecture (How it Works)
 
-[Image of simple web application architecture diagram]
+When a user submits a task, the system processes it through the following steps:
 
+Input: The user submits a task through the browser interface.
+Processing: The Flask backend receives the input and sends it to the Groq API.
+AI Reasoning: The Llama 3.3 model analyzes the task and breaks it down into smaller steps.
+Output: The frontend displays the generated steps in a clean and structured format.
 
-## 🚀 সেটআপ এবং রান করার নিয়ম
-আপনার পিসিতে এটি রান করতে নিচের কমান্ডগুলো দিন:
+🚀 Setup and Run Instructions
+
+To run this project on your local machine, execute the following commands:
 ```bash
 git clone [https://github.com/sagur0239/TaskForge-AI.git](https://github.com/sagur0239/TaskForge-AI.git)
 cd TaskForge-AI
